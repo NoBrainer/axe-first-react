@@ -6,3 +6,4 @@
 - Moved the `create-react-app` README to its own files
 - Stop indexing the build directory in IntelliJ
 - Added `@axe-core/react` and fixed issues
+- Added `eslint` and `prettier` to format files automatically on-save in IntelliJ
