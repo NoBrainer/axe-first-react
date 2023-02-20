@@ -5,3 +5,4 @@
 - Added IntelliJ settings files
 - Moved the `create-react-app` README to its own files
 - Stop indexing the build directory in IntelliJ
+- Added `@axe-core/react` and fixed issues
