@@ -4,3 +4,4 @@
 - Updated `.gitignore` per JetBrains guidance
 - Added IntelliJ settings files
 - Moved the `create-react-app` README to its own files
+- Stop indexing the build directory in IntelliJ
