@@ -5,7 +5,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header' role='banner'>
-        <h1>Accessibility-First Development with React</h1>
+        <h1>Accessibility-First React App</h1>
       </header>
       <main className='App-main' role='main'>
         <p>

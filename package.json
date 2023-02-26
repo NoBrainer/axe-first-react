@@ -2,33 +2,30 @@
   "name": "axe-first-react",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "web-vitals": "^2.1.4"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@axe-core/react": "^4.6.0",
+    "@vitejs/plugin-react": "^3.1.0",
     "eslint": "^8.34.0",
     "eslint-config-google": "^0.14.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.4",
-    "react-scripts": "5.0.1"
+    "vite": "^4.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "vite build",
+    "dev": "vite dev",
+    "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "prettier:fix": "prettier --write ."
   },
   "browserslist": {
     "production": [
