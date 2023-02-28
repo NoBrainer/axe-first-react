@@ -2,8 +2,10 @@ import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import theme from 'common/theme';
 import App from 'components/App';
 import './index.css';
 
@@ -17,6 +19,9 @@ if (import.meta.env.DEV) {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );

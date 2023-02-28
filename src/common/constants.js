@@ -1,1 +1,1 @@
-export const EXAMPLE = 'example string';
+export const APP_BAR_HEIGHT = 70;
