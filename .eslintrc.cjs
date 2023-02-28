@@ -31,7 +31,7 @@ module.exports = {
   },
   ignorePatterns: ['build/**/*'],
   settings: {
-    'import/extensions': ['.cjs', '.js', '.jsx', '.mjs'],
+    'import/extensions': ['.js', '.jsx', '.mjs'],
     'import/resolver': {
       node: {
         moduleDirectory: ['node_modules'],
