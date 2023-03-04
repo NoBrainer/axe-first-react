@@ -1,18 +1,13 @@
-import { Box, Grid, List, ListItem, Typography } from '@mui/material';
+import { Grid, List, ListItem, Typography } from '@mui/material';
 import React from 'react';
+import PagePadder from 'components/scaffold/PagePadder';
 
 function AppFooter() {
   return (
     <footer>
-      <Box sx={{ mt: 3 }}>
-        <Grid container direction='row'>
-          <Grid item xs={false} sm={1} md={2} />
-          <Grid container item xs={12} sm={10} md={8}>
-            <ExampleFooter />
-          </Grid>
-          <Grid item xs={false} sm={1} md={2} />
-        </Grid>
-      </Box>
+      <PagePadder sx={{ mt: 3 }}>
+        <ExampleFooter />
+      </PagePadder>
     </footer>
   );
 }

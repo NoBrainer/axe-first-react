@@ -1,18 +1,14 @@
-import { Card, CardContent, Grid, Typography } from '@mui/material';
+import { Card, CardContent, Typography } from '@mui/material';
 import React from 'react';
+import { APP_BAR_HEIGHT } from 'common/constants';
+import PagePadder from 'components/scaffold/PagePadder';
 
 function AppContent() {
   return (
     <main>
-      <Grid container direction='row'>
-        <Grid item xs={false} sm={1} md={2} />
-        <Grid container item xs={12} sm={10} md={8}>
-          <Grid container direction='column'>
-            <ExampleContent />
-          </Grid>
-        </Grid>
-        <Grid item xs={false} sm={1} md={2} />
-      </Grid>
+      <PagePadder sx={{ mt: `${APP_BAR_HEIGHT}px`, pt: 3 }}>
+        <ExampleContent />
+      </PagePadder>
     </main>
   );
 }
