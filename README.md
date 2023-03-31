@@ -4,6 +4,7 @@ This is a project template for making an accessibility-first React app.
 ## Goals
 - Provide useful React examples.
 - Include a basic layout with a header, content, footer, and expandable side panel.
+- Include skip links button.
 - Include a form with complicated components, like a date picker.
 
 ## Links
