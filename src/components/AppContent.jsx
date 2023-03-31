@@ -21,6 +21,58 @@ function ExampleContent() {
           This app is a designed to be a template for others to use. It comes with some accessibility libraries
           installed/setup, and its components come designed with accessibility in mind.
         </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
+        <Typography paragraph={true}>
+          This app is a designed to be a template for others to use. It comes with some accessibility libraries
+          installed/setup, and its components come designed with accessibility in mind.
+        </Typography>
       </CardContent>
     </Card>
   );
