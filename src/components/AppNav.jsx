@@ -17,12 +17,18 @@ import {
   Toolbar,
 } from '@mui/material';
 import PropTypes from 'prop-types';
-import React, { useMemo } from 'react';
-import { APP_BAR_HEIGHT, APP_NAV_WIDTH, APP_NAV_WIDTH_COLLAPSED } from 'common/constants';
+import React, { useCallback, useMemo } from 'react';
+import { APP_BAR_HEIGHT, APP_NAV_WIDTH, APP_NAV_WIDTH_COLLAPSED, COOKIE_NAV_STATE } from 'common/constants';
+import { useCookie } from 'common/cookies';
 
-function AppNav({ isExpanded = true, onToggle = () => {} }) {
+function AppNav() {
+  const [navCookie, setNavCookie] = useCookie(COOKIE_NAV_STATE);
+  const isExpanded = useMemo(() => navCookie === 'o', [navCookie]);
   const width = useMemo(() => `${isExpanded ? APP_NAV_WIDTH : APP_NAV_WIDTH_COLLAPSED}px`, [isExpanded]);
   const actionName = useMemo(() => `${isExpanded ? 'collapse' : 'expand'}`, [isExpanded]);
+  const handleToggle = useCallback(() => {
+    setNavCookie(isExpanded ? '' : 'o');
+  }, [isExpanded]);
   return (
     <nav>
       <Drawer
@@ -43,7 +49,7 @@ function AppNav({ isExpanded = true, onToggle = () => {} }) {
             edge='start'
             color='inherit'
             aria-label={`Button to toggle left panel. Press spacebar to ${actionName}.`}
-            onClick={onToggle}
+            onClick={handleToggle}
           >
             {isExpanded ? <CollapseIcon /> : <ExpandIcon />}
           </IconButton>
