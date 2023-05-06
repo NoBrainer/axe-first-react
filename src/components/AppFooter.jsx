@@ -4,7 +4,7 @@ import PagePadder from 'components/scaffold/PagePadder';
 
 function AppFooter() {
   return (
-    <footer>
+    <footer id='app-footer'>
       <PagePadder sx={{ mt: 3 }}>
         <ExampleFooter />
       </PagePadder>

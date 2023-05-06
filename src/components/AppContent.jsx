@@ -5,7 +5,7 @@ import PagePadder from 'components/scaffold/PagePadder';
 
 function AppContent() {
   return (
-    <main>
+    <main id='app-main'>
       <PagePadder sx={{ mt: `${APP_BAR_HEIGHT}px`, pt: 3 }}>
         <ExampleContent />
       </PagePadder>

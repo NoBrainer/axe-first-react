@@ -20,6 +20,7 @@ import PropTypes from 'prop-types';
 import React, { useCallback, useMemo } from 'react';
 import { APP_BAR_HEIGHT, APP_NAV_WIDTH, APP_NAV_WIDTH_COLLAPSED, COOKIE_NAV_STATE } from 'common/constants';
 import { useCookie } from 'common/cookies';
+import SkipLinks from 'components/SkipLinks';
 
 function AppNav() {
   const [navCookie, setNavCookie] = useCookie(COOKIE_NAV_STATE);
@@ -30,7 +31,8 @@ function AppNav() {
     setNavCookie(isExpanded ? '' : 'o');
   }, [isExpanded]);
   return (
-    <nav>
+    <nav id='app-nav'>
+      <SkipLinks />
       <Drawer
         variant='permanent'
         anchor='left'
